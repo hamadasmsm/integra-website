@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="integra.css"/>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rancho&display=swap" rel="stylesheet">
+
+    <title>Test Web Design</title>
+</head>
+<body>
+    <div class="rectangle">
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+        </div>
+        <div class="icons">
+            <div class="icon">
+            <i class="fa-sharp fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-ghost"></i>
+            <i class="fa-solid fa-user-group"></i>
+            <i class="fa-regular fa-bell"></i>
+        </div>
+            <div class="circle">LT</div>
+        </div>
+    </div>
+    <nav class="nav1">
+        <ul>
+            <li class="home"><a href="#">Home</a></li>
+            <li><a href="#">Configurazioni</a></li>
+            <li><a href="#">Documenti</a></li>
+            <li><a href="#">Servizi postali</a></li>
+            <li><a href="#">Servizi idrici</a></li>
+            <li><a href="#">Servizi digitali</a></li>
+            <li><a href="#">Gestione</a></li>
+            <li><a href="#">Controllo</a></li>
+            <li><a href="#">Commerciale</a></li>
+            <li><a href="#">Supporto</a></li> 
+        </ul>
+    </nav>
+    <nav class="nav2">
+        <ul>
+            <li class="pre"><a href="#">Preventivi</a></li>
+            <li><a href="#">Capienze</a></li>
+            <li><a href="#">listini</a></li>
+            <li><a href="#">Agenti</a></li>
+            <li><a href="#">CRM</a></li>
+            
+        </ul>
+    </nav>
+    <nav class="nav3">
+        <ul>
+            <li class="filtra"><a href="#">Filtra</a></li>
+            <li class="plus">
+            <a href="plus.html"> <i class="fa-solid fa-circle-plus"></i>
+                <span> Nuovo preventivo</span></a>
+            </li>
+        </ul>
+    </nav>
+    <table>
+        <thead>
+            <tr>
+                <th>Azioni</th>
+                <th>Numero</th>
+                <th>Agenzia</th>
+                <th>Cliente</th>
+                <th>Stato</th>
+                <th>Creato da</th>
+                <th>Agente</th>
+                <th>Data creazione</th>
+                <th>Approva da</th>
+                <th>Data approvazione</th>
+                <th>Allegati</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr >
+                <td>
+                    <div class="load">
+                    <div class="one"></div>
+                    <div class="tow"></div>
+                    <div class="three"></div>
+                </div>
+            </td>
+                <td >PR-202200001</td>
+                <td>Sogert s.p.a</td>
+                <td>Comune de naopli</td>
+                <td class="btn"><div class="dropdown">
+                    <button onclick="display('myDropdown1')" class="dropbtn">In attesa</button>
+                    <div id="myDropdown1" class="dropdown-content">
+                    <div>Stati</div>
+                    <a href="#" class="yellow">In attesa</a>
+                    <a href="#" class="green">Approvato da responsabile</a>
+                    <a href="#" class="lightred">Rigettato da responsabile</a>
+                    <a href="#" class="blue">Inviato al cliente</a>
+                    <a href="#" class="green2">Approvato da cliente</a>
+                    <a href="#" class="red">Rigettato da cliente</a>
+                    
+                    </div>
+                </div>
+                </td>
+                <td>Mario Rossi</td>
+                <td>Mario Bianchi</td>
+                <td>23/3/2022</td>
+                <td>Non approvato</td>
+                <td>-</td>
+                <td class="last" onclick="overlay()"> <a href="#">Allegati</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="load">
+                    <div class="one"></div>
+                    <div class="tow"></div>
+                    <div class="three"></div>
+                </div>
+            </td>
+                <td >PR-202200001</td>
+                <td>Sogert s.p.a</td>
+                <td>Comune de naopli</td>
+                <td class="btn"><div class="dropdown">
+                    <button onclick="display('myDropdown2')" class="dropbtn">In attesa</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                    <div>Stati</div>
+                    <a href="#" class="yellow">In attesa</a>
+                    <a href="#" class="green">Approvato da responsabile</a>
+                    <a href="#" class="lightred">Rigettato da responsabile</a>
+                    <a href="#" class="blue">Inviato al cliente</a>
+                    <a href="#" class="green2">Approvato da cliente</a>
+                    <a href="#" class="red">Rigettato da cliente</a>
+                    
+                    </div>
+                </div>
+                </td>
+                <td>Mario Rossi</td>
+                <td>Mario Bianchi</td>
+                <td>23/3/2022</td>
+                <td>Non approvato</td>
+                <td>-</td>
+                <td class="last"onclick="overlay()"> <a href="#">Allegati</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="load">
+                    <div class="one"></div>
+                    <div class="tow"></div>
+                    <div class="three"></div>
+                </div>
+            </td>
+                <td >PR-202200001</td>
+                <td>Sogert s.p.a</td>
+                <td>Comune de naopli</td>
+                <td class="btn"><div class="dropdown">
+                    <button onclick="display('myDropdown3')" class="dropbtn">In attesa</button>
+                    <div id="myDropdown3" class="dropdown-content">
+                    <div>Stati</div>
+                    <a href="#" class="yellow">In attesa</a>
+                    <a href="#" class="green">Approvato da responsabile</a>
+                    <a href="#" class="lightred">Rigettato da responsabile</a>
+                    <a href="#" class="blue">Inviato al cliente</a>
+                    <a href="#" class="green2">Approvato da cliente</a>
+                    <a href="#" class="red">Rigettato da cliente</a>
+                    
+                    </div>
+                </div>
+                </td>
+                <td>Mario Rossi</td>
+                <td>Mario Bianchi</td>
+                <td>23/3/2022</td>
+                <td>Non approvato</td>
+                <td>-</td>
+                <td class="last"onclick="overlay()"> <a href="#">Allegati</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="load">
+                    <div class="one"></div>
+                    <div class="tow"></div>
+                    <div class="three"></div>
+                </div>
+            </td>
+                <td >PR-202200001</td>
+                <td>Sogert s.p.a</td>
+                <td>Comune de naopli</td>
+                <td class="btn"><div class="dropdown">
+                    <button onclick="display('myDropdown4')" class="dropbtn">In attesa</button>
+                    <div id="myDropdown4" class="dropdown-content">
+                    <div>Stati</div>
+                    <a href="#" class="yellow">In attesa</a>
+                    <a href="#" class="green">Approvato da responsabile</a>
+                    <a href="#" class="lightred">Rigettato da responsabile</a>
+                    <a href="#" class="blue">Inviato al cliente</a>
+                    <a href="#" class="green2">Approvato da cliente</a>
+                    <a href="#" class="red">Rigettato da cliente</a>
+                    
+                    </div>
+                </div>
+                </td>
+                <td>Mario Rossi</td>
+                <td>Mario Bianchi</td>
+                <td>23/3/2022</td>
+                <td>Non approvato</td>
+                <td>-</td>
+                <td class="last"onclick="overlay()"> <a href="#">Allegati</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="load">
+                    <div class="one"></div>
+                    <div class="tow"></div>
+                    <div class="three"></div>
+                </div>
+            </td>
+                <td >PR-202200001</td>
+                <td>Sogert s.p.a</td>
+                <td>Comune de naopli</td>
+                <td class="btn"><div class="dropdown">
+                    <button onclick="display('myDropdown5')" class="dropbtn">In attesa</button>
+                    <div id="myDropdown5" class="dropdown-content">
+                    <div>Stati</div>
+                    <a href="#" class="yellow">In attesa</a>
+                    <a href="#" class="green">Approvato da responsabile</a>
+                    <a href="#" class="lightred">Rigettato da responsabile</a>
+                    <a href="#" class="blue">Inviato al cliente</a>
+                    <a href="#" class="green2">Approvato da cliente</a>
+                    <a href="#" class="red">Rigettato da cliente</a>
+                    
+                    </div>
+                </div>
+                </td>
+                <td>Mario Rossi</td>
+                <td>Mario Bianchi</td>
+                <td>23/3/2022</td>
+                <td>Non approvato</td>
+                <td>-</td>
+                <td class="last"onclick="overlay()"> <a href="#">Allegati</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="load">
+                    <div class="one"></div>
+                    <div class="tow"></div>
+                    <div class="three"></div>
+                </div>
+            </td>
+                <td >PR-202200001</td>
+                <td>Sogert s.p.a</td>
+                <td>Comune de naopli</td>
+                <td class="btn"><div class="dropdown">
+                    <button onclick="display('myDropdown6')" class="dropbtn">In attesa</button>
+                    <div id="myDropdown6" class="dropdown-content">
+                    <div>Stati</div>
+                    <a href="#" class="yellow">In attesa</a>
+                    <a href="#" class="green">Approvato da responsabile</a>
+                    <a href="#" class="lightred">Rigettato da responsabile</a>
+                    <a href="#" class="blue">Inviato al cliente</a>
+                    <a href="#" class="green2">Approvato da cliente</a>
+                    <a href="#" class="red">Rigettato da cliente</a>
+                    
+                    </div>
+                </div>
+                </td>
+                <td>Mario Rossi</td>
+                <td>Mario Bianchi</td>
+                <td>23/3/2022</td>
+                <td>Non approvato</td>
+                <td>-</td>
+                <td class="last"onclick="overlay()"> <a href="#">Allegati</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="load">
+                    <div class="one"></div>
+                    <div class="tow"></div>
+                    <div class="three"></div>
+                </div>
+            </td>
+                <td >PR-202200001</td>
+                <td>Sogert s.p.a</td>
+                <td>Comune de naopli</td>
+                <td class="btn"><div class="dropdown">
+                    <button onclick="display('myDropdown7')" class="dropbtn">In attesa</button>
+                    <div id="myDropdown7" class="dropdown-content">
+                    <div>Stati</div>
+                    <a href="#" class="yellow">In attesa</a>
+                    <a href="#" class="green">Approvato da responsabile</a>
+                    <a href="#" class="lightred">Rigettato da responsabile</a>
+                    <a href="#" class="blue">Inviato al cliente</a>
+                    <a href="#" class="green2">Approvato da cliente</a>
+                    <a href="#" class="red">Rigettato da cliente</a>
+                    
+                    </div>
+                </div>
+                </td>
+                <td>Mario Rossi</td>
+                <td>Mario Bianchi</td>
+                <td>23/3/2022</td>
+                <td>Non approvato</td>
+                <td>-</td>
+                <td class="last"onclick="overlay()"> <a href="#">Allegati</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <footer>
+        <div class="foot">
+            <p>Risultati per pagina<span>20</span></p>
+            <div class="arrow"></div>
+            <div class="num" id="one">1</div>
+            <div class="num">2</div>
+            <div class="num">3</div>
+            <div>...</div>
+            <div class="num">22</div>
+            <div class="num">5</div>
+        </div>
+    </footer>
+    
+        
+        <div class="overlay-content" id="over2">
+            <div class="overlay" id="over1"></div>
+            <div class="main">
+            <div class="head"> 
+                <i class="fa-solid fa-angle-left" id="back" onclick="closeNav()"></i>
+                <span>Apri preventivo con an'altro tab</span>
+            </div>
+            <header>
+                <div class="col1">
+                    <h4>Sogert S.P.A</h4>
+                    <p>IT5349432102</p>
+                    <p>Via Naopli, 80010 Naopli (NA)</p>
+                    <p>+39 322 223 3244</p>
+                    <p>+39 051123402</p>
+                    <p>Info@sogert.it</p>
+                </div>
+                <div class="col2">
+                    <h5>N&deg;preventivo <span>654865</span></h5>
+                    <h5>Creato da: <span>Mario Rossi</span></h5>
+                    <h5>Approvato da: <span>Giuseppe Miraglia</span></h5>
+                </div>
+            </header>
+            <section>
+                <div class="column1">
+                    <p>Lista prodotti</p>
+                    <table>
+                            <thead>
+                                <tr>
+                                    <th>Azioni</th>
+                                    <th>Prodotto</th>
+                                    <th>Codice prodotto Tipologia</th>
+                                    <th>Catigoria Servizo Sottocategoria</th>
+                                    <th>IVA Sconto</th>
+                                    <th>Prezzo netto quantita Importo Totale</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr >
+                                    <td>
+                                        <div class="load">
+                                        <div class="one"></div>
+                                        <div class="tow"></div>
+                                        <div class="three"></div>
+                                    </div>
+                                    <div class="arrow">                
+                                        </div>
+                                </td>
+                                    <td >PR-202200001</td>
+                                    <td>Sogert s.p.a</td>
+                                    <td>Comune de naopli</td>
+                                    <td>Mario Rossi</td>
+                <td>Mario Bianchi</td>
+                                    </tr>
+                                <tr >
+                                    <td>
+                                        <div class="load">
+                                        <div class="one"></div>
+                                        <div class="tow"></div>
+                                        <div class="three"></div>
+                                    </div>
+                                    <div class="arrow">                
+                                        </div>
+                                </td>
+                                    <td >PR-202200001</td>
+                                    <td>Sogert s.p.a</td>
+                                    <td>Comune de naopli</td>
+                                    <td>Mario Rossi</td>
+                <td>Mario Bianchi</td>
+                                    </tr>
+                                <tr >
+                                    <td>
+                                        <div class="load">
+                                        <div class="one"></div>
+                                        <div class="tow"></div>
+                                        <div class="three"></div>
+                                    </div>
+                                    <div class="arrow">                
+                                        </div>
+                                </td>
+                                    <td >PR-202200001</td>
+                                    <td>Sogert s.p.a</td>
+                                    <td>Comune de naopli</td>
+                                    <td>Mario Rossi</td>
+                <td>Mario Bianchi</td>
+                                    </tr>
+                                <tr >
+                                    <td>
+                                        <div class="load">
+                                        <div class="one"></div>
+                                        <div class="tow"></div>
+                                        <div class="three"></div>
+                                    </div>
+                                    <div class="arrow">                
+                                        </div>
+                                </td>
+                                    <td >PR-202200001</td>
+                                    <td>Sogert s.p.a</td>
+                                    <td>Comune de naopli</td>
+                                    <td>Mario Rossi</td>
+                <td>Mario Bianchi</td>
+                                    </tr>
+                                <tr >
+                                    <td>
+                                        <div class="load">
+                                        <div class="one"></div>
+                                        <div class="tow"></div>
+                                        <div class="three"></div>
+                                    </div>
+                                    <div class="arrow">                
+                                        </div>
+                                </td>
+                                    <td >PR-202200001</td>
+                                    <td>Sogert s.p.a</td>
+                                    <td>Comune de naopli</td>
+                                    <td>Mario Rossi</td>
+                <td>Mario Bianchi</td>
+                                    </tr>
+                                <tr >
+                                    <td>
+                                        <div class="load">
+                                        <div class="one"></div>
+                                        <div class="tow"></div>
+                                        <div class="three"></div>
+                                    </div>
+                                    <div class="arrow">                
+                                        </div>
+                                </td>
+                                    <td >PR-202200001</td>
+                                    <td>Sogert s.p.a</td>
+                                    <td>Comune de naopli</td>
+                                    <td>Mario Rossi</td>
+                <td>Mario Bianchi</td>
+                                    </tr>
+                                <tr >
+                                    <td>
+                                        <div class="load">
+                                        <div class="one"></div>
+                                        <div class="tow"></div>
+                                        <div class="three"></div>
+                                    </div>
+                                    <div class="arrow">                
+                                        </div>
+                                </td>
+                                    <td >PR-202200001</td>
+                                    <td>Sogert s.p.a</td>
+                                    <td>Comune de naopli</td>
+                                    <td>Mario Rossi</td>
+                <td>Mario Bianchi</td>
+                                    </tr>
+                                <tr >
+                                    <td>
+                                        <div class="load">
+                                        <div class="one"></div>
+                                        <div class="tow"></div>
+                                        <div class="three"></div>
+                                    </div>
+                                    <div class="arrow">                
+                                        </div>
+                                </td>
+                                    <td >PR-202200001</td>
+                                    <td>Sogert s.p.a</td>
+                                    <td>Comune de naopli</td>
+                                    <td>Mario Rossi</td>
+                <td>Mario Bianchi</td>
+                                    </tr>
+                                <tr >
+                                    <td>
+                                        <div class="load">
+                                        <div class="one"></div>
+                                        <div class="tow"></div>
+                                        <div class="three"></div>
+                                    </div>
+                                    <div class="arrow">                
+                                        </div>
+                                </td>
+                                    <td >PR-202200001</td>
+                                    <td>Sogert s.p.a</td>
+                                    <td>Comune de naopli</td>
+                                    <td>Mario Rossi</td>
+                <td>Mario Bianchi</td>
+                                    </tr>
+                                <tr >
+                                    <td>
+                                        <div class="load">
+                                        <div class="one"></div>
+                                        <div class="tow"></div>
+                                        <div class="three"></div>
+                                    </div>
+                                    <div class="arrow">                
+                                        </div>
+                                </td>
+                                    <td >PR-202200001</td>
+                                    <td>Sogert s.p.a</td>
+                                    <td>Comune de naopli</td>
+                                    <td>Mario Rossi</td>
+                <td>Mario Bianchi</td>
+                                    </tr>
+                                <tr >
+                                    <td>
+                                        <div class="load">
+                                        <div class="one"></div>
+                                        <div class="tow"></div>
+                                        <div class="three"></div>
+                                    </div>
+                                    <div class="arrow">                
+                                        </div>
+                                </td>
+                                    <td >PR-202200001</td>
+                                    <td>Sogert s.p.a</td>
+                                    <td>Comune de naopli</td>
+                                    <td>Mario Rossi</td>
+                <td>Mario Bianchi</td>
+                                    </tr>
+                                <tr >
+                                    <td>
+                                        <div class="load">
+                                        <div class="one"></div>
+                                        <div class="tow"></div>
+                                        <div class="three"></div>
+                                    </div>
+                                    <div class="arrow">                
+                                        </div>
+                                </td>
+                                    <td >PR-202200001</td>
+                                    <td>Sogert s.p.a</td>
+                                    <td>Comune de naopli</td>
+                                    <td>Mario Rossi</td>
+                <td>Mario Bianchi</td>
+                                    </tr>
+
+                            </tbody>
+                    </table>
+                    <p id="p">Info aggiuntive</p>
+                    <div class="end">
+                    <div class="group">
+                        <div class="cont">
+                        <h1>Condizioni</h1>
+                        <div id="div">
+                            <i class="fa-brands fa-galactic-senate"></i>
+                            <span>Condizioni sogert</span>
+                            <i class="fa-sharp fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <h1>Note</h1>
+                        <div id="div">
+                            <i class="fa-brands fa-itunes-note"></i>
+                            <span>Note sogert</span>
+                            <i class="fa-sharp fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    </div>
+                    <h1>Elementi personalizzati</h1>
+                        <div id="div">
+                            <i class="fa-brands fa-evernote"></i>
+                            <span>Field sogert</span>
+                            <i class="fa-sharp fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="column2">
+                    <h2>Azioni</h2>
+                    <p class="lightgreen">Approva</p>
+                    <p class="str">Rigetta</p>
+                    <p class="white">Modifica</p>
+                    <h2>Riepilogo</h2>
+                    <div class="tow one" >
+                        <h5>Competenze</h5>
+                        <h6>525.00&euro;</h6>
+                    </div>
+                    <div class="tow three">
+                        <h5>IVA <span>525,00&euro;</span></h5>
+                        <h6>115,50&euro;</h6>
+                    </div>
+                    <div class="tow four">
+                        <h5>Totale da pagare</h5>
+                        <h6>640,50&euro;</h6>
+                    </div>
+                    <div class="tow five">
+                        <h5>Capienza determine</h5>
+                        <h6>640,50&euro;</h6>
+                    </div>
+                    <div class="tow six">
+                        <h5>Rimanente</h5>
+                        <h6>20,50&euro;</h6>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </div>
+    
+<script src="integra.js"></script>
+    
+    
+</body>
+</html>
